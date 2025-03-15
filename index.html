@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Pokémon Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokédex</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" required placeholder="Enter Pokémon name or ID...">
+                <button id="search-button">Search</button>
+            </div>
+        </header>
+
+        <main class="pokemon-card">
+            <div class="pokemon-header">
+                <h2 id="pokemon-name">---</h2>
+                <span id="pokemon-id">#---</span>
+            </div>
+
+            <div class="pokemon-image">
+                <!-- Pokemon sprite will be inserted here -->
+            </div>
+
+            <div class="pokemon-types" id="types">
+                <!-- Types will be inserted here -->
+            </div>
+
+            <div class="pokemon-info">
+                <div class="info-group">
+                    <div class="info-item">
+                        <span class="label">Height:</span>
+                        <span id="height">---</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Weight:</span>
+                        <span id="weight">---</span>
+                    </div>
+                </div>
+
+                <div class="stats-container">
+                    <h3>Base Stats</h3>
+                    <div class="stat-group">
+                        <div class="stat-item">
+                            <span class="label">HP:</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" data-stat="hp"></div>
+                                <span id="hp">---</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Attack:</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" data-stat="attack"></div>
+                                <span id="attack">---</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Defense:</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" data-stat="defense"></div>
+                                <span id="defense">---</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Special Attack:</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" data-stat="special-attack"></div>
+                                <span id="special-attack">---</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Special Defense:</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" data-stat="special-defense"></div>
+                                <span id="special-defense">---</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label">Speed:</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" data-stat="speed"></div>
+                                <span id="speed">---</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
